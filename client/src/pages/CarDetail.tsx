@@ -63,7 +63,7 @@ export default function CarDetail() {
             <div className="space-y-4">
               <div className="aspect-[16/10] w-full rounded-2xl overflow-hidden bg-zinc-900 border border-white/5 relative group">
                 <img 
-                  src={car.images[activeImage]} 
+                  src={car.images[activeImage].startsWith('@assets/') ? car.images[activeImage].replace('@assets/', '/attached_assets/') : car.images[activeImage]} 
                   alt={car.model}
                   className="w-full h-full object-cover"
                 />
@@ -80,7 +80,7 @@ export default function CarDetail() {
                       idx === activeImage ? "border-primary" : "border-transparent opacity-60 hover:opacity-100"
                     }`}
                   >
-                    <img src={img} alt="Thumbnail" className="w-full h-full object-cover" />
+                    <img src={img.startsWith('@assets/') ? img.replace('@assets/', '/attached_assets/') : img} alt="Thumbnail" className="w-full h-full object-cover" />
                   </button>
                 ))}
               </div>

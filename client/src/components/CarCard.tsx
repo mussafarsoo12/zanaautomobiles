@@ -19,7 +19,7 @@ export function CarCard({ car }: CarCardProps) {
         {/* Image Container */}
         <div className="relative aspect-[16/10] overflow-hidden bg-zinc-800">
           <img
-            src={car.images[0]}
+            src={car.images[0].startsWith('@assets/') ? car.images[0].replace('@assets/', '/attached_assets/') : car.images[0]}
             alt={`${car.year} ${car.make} ${car.model}`}
             className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500 ease-out"
           />

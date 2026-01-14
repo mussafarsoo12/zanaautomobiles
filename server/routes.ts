@@ -1,4 +1,6 @@
 import type { Express } from "express";
+import express from "express";
+import path from "path";
 import type { Server } from "http";
 import { storage } from "./storage";
 import { api } from "@shared/routes";
@@ -8,6 +10,8 @@ export async function registerRoutes(
   httpServer: Server,
   app: Express
 ): Promise<Server> {
+  app.use("/attached_assets", express.static(path.resolve(process.cwd(), "attached_assets")));
+
   app.get(api.cars.list.path, async (req, res) => {
     const featured = req.query.featured === 'true';
     const cars = await storage.getCars(featured);
