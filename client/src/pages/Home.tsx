@@ -38,27 +38,27 @@ export default function Home() {
           >
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-bold mb-6">
               <Star className="w-3.5 h-3.5 fill-primary" />
-              <span>Premium Selection 2024</span>
+              <span>Sélection Premium 2024</span>
             </div>
             <h1 className="text-5xl md:text-7xl font-display font-bold text-white leading-tight mb-6">
-              Drive the <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-200">Extraordinary</span>
+              Conduisez l'<span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-200">Extraordinaire</span>
             </h1>
             <p className="text-lg md:text-xl text-zinc-300 mb-10 leading-relaxed max-w-lg">
-              Discover a curated collection of high-performance and luxury vehicles. Your dream car is waiting at Zana Automobiles.
+              Découvrez une collection de véhicules de luxe et de haute performance. La voiture de vos rêves vous attend chez Zana Automobiles.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link 
                 href="/inventory"
                 className="px-8 py-4 bg-primary text-zinc-950 font-bold rounded-xl hover:bg-emerald-400 transition-all shadow-lg shadow-emerald-900/40 hover:shadow-emerald-500/30 hover:-translate-y-1 flex items-center justify-center gap-2"
               >
-                View Inventory
+                Voir l'inventaire
                 <ArrowRight className="w-5 h-5" />
               </Link>
               <Link 
                 href="/sell"
                 className="px-8 py-4 bg-white/5 backdrop-blur-sm text-white font-bold rounded-xl border border-white/10 hover:bg-white/10 transition-all hover:-translate-y-1 flex items-center justify-center"
               >
-                Sell Your Car
+                Vendre votre voiture
               </Link>
             </div>
           </motion.div>
@@ -72,18 +72,18 @@ export default function Home() {
             {[
               { 
                 icon: Shield, 
-                title: "Certified Quality", 
-                desc: "Every vehicle undergoes a rigorous 150-point inspection by our master technicians." 
+                title: "Qualité Certifiée", 
+                desc: "Chaque véhicule subit une inspection rigoureuse en 150 points par nos maîtres techniciens." 
               },
               { 
                 icon: Zap, 
-                title: "Instant Financing", 
-                desc: "Get approved in minutes with our competitive rates and flexible payment plans." 
+                title: "Financement Instantané", 
+                desc: "Obtenez une approbation en quelques minutes avec nos taux compétitifs et nos plans de paiement flexibles." 
               },
               { 
                 icon: Star, 
-                title: "Premium Service", 
-                desc: "Experience white-glove service from your first visit to long after your purchase." 
+                title: "Service Premium", 
+                desc: "Vivez une expérience de service exceptionnelle dès votre première visite et bien après votre achat." 
               }
             ].map((feature, i) => (
               <div key={i} className="bg-zinc-900/30 p-8 rounded-2xl border border-white/5 hover:border-primary/30 transition-colors">
@@ -102,11 +102,11 @@ export default function Home() {
       <section className="py-24 bg-zinc-900/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 flex justify-between items-end">
           <div>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-2">Featured Vehicles</h2>
-            <p className="text-zinc-400">Hand-picked for performance and style</p>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-2">Véhicules en vedette</h2>
+            <p className="text-zinc-400">Sélectionnés pour leur performance et leur style</p>
           </div>
           <Link href="/inventory" className="hidden md:flex items-center gap-2 text-primary hover:text-emerald-300 font-medium transition-colors">
-            View All <ArrowRight className="w-4 h-4" />
+            Voir tout <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
 
@@ -126,7 +126,7 @@ export default function Home() {
               ))}
               {(!featuredCars || featuredCars.length === 0) && (
                 <div className="col-span-full text-center py-12 text-zinc-500">
-                  No featured cars available at the moment.
+                  Aucun véhicule en vedette disponible pour le moment.
                 </div>
               )}
             </div>
@@ -138,8 +138,8 @@ export default function Home() {
       <section className="py-24 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-12">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-2">Recent Arrivals</h2>
-            <p className="text-zinc-400">Fresh inventory added this week</p>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-2">Arrivages récents</h2>
+            <p className="text-zinc-400">Nouvel inventaire ajouté cette semaine</p>
           </div>
 
           {loadingRecent ? (
@@ -161,7 +161,7 @@ export default function Home() {
               href="/inventory"
               className="inline-flex items-center gap-2 px-8 py-3 rounded-xl border border-zinc-700 text-white font-medium hover:bg-zinc-800 transition-colors"
             >
-              Browse Full Inventory
+              Parcourir tout l'inventaire
             </Link>
           </div>
         </div>
@@ -171,22 +171,22 @@ export default function Home() {
       <section className="py-24 relative overflow-hidden">
         <div className="absolute inset-0 bg-primary/10"></div>
         <div className="relative max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">Ready to find your dream car?</h2>
+          <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">Prêt à trouver la voiture de vos rêves ?</h2>
           <p className="text-xl text-zinc-300 mb-10 max-w-2xl mx-auto">
-            Visit our showroom today or schedule a test drive online. Your journey to excellence starts here.
+            Visitez notre salle d'exposition aujourd'hui ou planifiez un essai routier en ligne. Votre voyage vers l'excellence commence ici.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
              <Link 
                 href="/contact"
                 className="px-8 py-4 bg-primary text-zinc-950 font-bold rounded-xl hover:bg-emerald-400 transition-all shadow-lg shadow-emerald-900/40 hover:-translate-y-1"
               >
-                Schedule Test Drive
+                Planifier un essai routier
               </Link>
               <Link 
                 href="/inventory"
                 className="px-8 py-4 bg-zinc-900 text-white font-bold rounded-xl border border-zinc-800 hover:bg-zinc-800 transition-all hover:-translate-y-1"
               >
-                Browse Inventory
+                Parcourir l'inventaire
               </Link>
           </div>
         </div>

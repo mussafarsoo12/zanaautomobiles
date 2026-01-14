@@ -8,9 +8,9 @@ export function Navbar() {
   const [location] = useLocation();
 
   const navLinks = [
-    { href: "/", label: "Home" },
-    { href: "/inventory", label: "Inventory" },
-    { href: "/sell", label: "Sell Your Car" },
+    { href: "/", label: "Accueil" },
+    { href: "/inventory", label: "Inventaire" },
+    { href: "/sell", label: "Vendre votre voiture" },
     { href: "/contact", label: "Contact" },
   ];
 
@@ -50,7 +50,7 @@ export function Navbar() {
               className="bg-primary hover:bg-emerald-400 text-zinc-950 font-bold px-5 py-2.5 rounded-lg transition-all duration-300 flex items-center gap-2 shadow-lg shadow-emerald-900/20 hover:shadow-emerald-500/20 hover:-translate-y-0.5"
             >
               <Phone className="w-4 h-4" />
-              <span>Call Us</span>
+              <span>Nous appeler</span>
             </Link>
           </div>
 
@@ -95,7 +95,7 @@ export function Navbar() {
                   className="w-full bg-primary text-zinc-950 font-bold py-3 rounded-lg flex items-center justify-center gap-2"
                 >
                   <Phone className="w-5 h-5" />
-                  Call Us Now
+                  Appelez-nous maintenant
                 </Link>
               </div>
             </div>

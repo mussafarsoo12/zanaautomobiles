@@ -19,8 +19,8 @@ export default function Inventory() {
         {/* Header & Controls */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-10">
           <div>
-            <h1 className="text-4xl font-display font-bold text-white mb-2">Inventory</h1>
-            <p className="text-zinc-400">Showing {filteredCars?.length || 0} premium vehicles</p>
+            <h1 className="text-4xl font-display font-bold text-white mb-2">Inventaire</h1>
+            <p className="text-zinc-400">Affichage de {filteredCars?.length || 0} véhicules premium</p>
           </div>
 
           <div className="flex gap-4 w-full md:w-auto">
@@ -28,7 +28,7 @@ export default function Inventory() {
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-zinc-500" />
               <input
                 type="text"
-                placeholder="Search by make or model..."
+                placeholder="Rechercher par marque ou modèle..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="w-full bg-zinc-900 border border-zinc-800 rounded-xl py-3 pl-10 pr-4 text-white placeholder:text-zinc-600 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all"
@@ -60,8 +60,8 @@ export default function Inventory() {
                 <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-zinc-900 mb-4">
                   <Search className="w-8 h-8 text-zinc-600" />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-2">No vehicles found</h3>
-                <p className="text-zinc-500">Try adjusting your search terms</p>
+                <h3 className="text-xl font-bold text-white mb-2">Aucun véhicule trouvé</h3>
+                <p className="text-zinc-500">Essayez d'ajuster vos termes de recherche</p>
               </div>
             )}
           </>

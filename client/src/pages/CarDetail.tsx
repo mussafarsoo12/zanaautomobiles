@@ -24,18 +24,18 @@ export default function CarDetail() {
   if (error || !car) {
     return (
       <div className="min-h-screen pt-24 flex flex-col items-center justify-center text-center px-4">
-        <h2 className="text-3xl font-display font-bold text-white mb-4">Vehicle Not Found</h2>
-        <p className="text-zinc-400 mb-8">The vehicle you're looking for might have been sold or removed.</p>
+        <h2 className="text-3xl font-display font-bold text-white mb-4">Véhicule non trouvé</h2>
+        <p className="text-zinc-400 mb-8">Le véhicule que vous recherchez a peut-être été vendu ou retiré.</p>
         <Link href="/inventory" className="px-6 py-3 bg-primary text-zinc-950 font-bold rounded-lg hover:bg-emerald-400 transition-colors">
-          Back to Inventory
+          Retour à l'inventaire
         </Link>
       </div>
     );
   }
 
-  const formatter = new Intl.NumberFormat("en-US", {
+  const formatter = new Intl.NumberFormat("fr-FR", {
     style: "currency",
-    currency: "USD",
+    currency: "EUR",
     maximumFractionDigits: 0,
   });
 
@@ -45,9 +45,9 @@ export default function CarDetail() {
       {/* Breadcrumb */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
         <div className="flex items-center gap-2 text-sm text-zinc-500">
-          <Link href="/" className="hover:text-primary transition-colors">Home</Link>
+          <Link href="/" className="hover:text-primary transition-colors">Accueil</Link>
           <ChevronRight className="w-4 h-4" />
-          <Link href="/inventory" className="hover:text-primary transition-colors">Inventory</Link>
+          <Link href="/inventory" className="hover:text-primary transition-colors">Inventaire</Link>
           <ChevronRight className="w-4 h-4" />
           <span className="text-white truncate">{car.year} {car.make} {car.model}</span>
         </div>
@@ -88,7 +88,7 @@ export default function CarDetail() {
 
             {/* Description */}
             <div className="bg-zinc-900/30 p-8 rounded-2xl border border-white/5">
-              <h2 className="text-2xl font-display font-bold text-white mb-6">Vehicle Description</h2>
+              <h2 className="text-2xl font-display font-bold text-white mb-6">Description du véhicule</h2>
               <div className="prose prose-invert max-w-none text-zinc-400 leading-relaxed">
                 <p>{car.description}</p>
               </div>
@@ -96,7 +96,7 @@ export default function CarDetail() {
 
             {/* Features Grid */}
             <div className="bg-zinc-900/30 p-8 rounded-2xl border border-white/5">
-              <h2 className="text-2xl font-display font-bold text-white mb-6">Features & Options</h2>
+              <h2 className="text-2xl font-display font-bold text-white mb-6">Équipements et Options</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                 {car.features.map((feature, i) => (
                   <div key={i} className="flex items-start gap-3 text-zinc-300">
@@ -118,23 +118,23 @@ export default function CarDetail() {
                 <h1 className="text-3xl font-display font-bold text-white mb-2 leading-tight">
                   {car.year} {car.make} {car.model}
                 </h1>
-                <p className="text-zinc-400">{car.mileage.toLocaleString()} miles</p>
+                <p className="text-zinc-400">{car.mileage.toLocaleString()} km</p>
               </div>
 
               <div className="flex items-end gap-3 pb-6 border-b border-white/5">
                 <span className="text-4xl font-bold text-primary">
                   {formatter.format(Number(car.price))}
                 </span>
-                <span className="text-zinc-500 mb-1.5 text-sm font-medium">plus taxes & fees</span>
+                <span className="text-zinc-500 mb-1.5 text-sm font-medium">hors taxes et frais</span>
               </div>
 
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-zinc-950/50 p-3 rounded-lg border border-white/5">
-                  <span className="text-xs text-zinc-500 block mb-1">Exterior</span>
+                  <span className="text-xs text-zinc-500 block mb-1">Extérieur</span>
                   <span className="text-white font-medium block truncate">{car.exteriorColor}</span>
                 </div>
                 <div className="bg-zinc-950/50 p-3 rounded-lg border border-white/5">
-                  <span className="text-xs text-zinc-500 block mb-1">Interior</span>
+                  <span className="text-xs text-zinc-500 block mb-1">Intérieur</span>
                   <span className="text-white font-medium block truncate">{car.interiorColor}</span>
                 </div>
                 <div className="bg-zinc-950/50 p-3 rounded-lg border border-white/5">
@@ -142,7 +142,7 @@ export default function CarDetail() {
                   <span className="text-white font-medium block truncate">{car.transmission}</span>
                 </div>
                 <div className="bg-zinc-950/50 p-3 rounded-lg border border-white/5">
-                  <span className="text-xs text-zinc-500 block mb-1">Fuel Type</span>
+                  <span className="text-xs text-zinc-500 block mb-1">Type de carburant</span>
                   <span className="text-white font-medium block truncate">{car.fuelType}</span>
                 </div>
               </div>
@@ -150,18 +150,18 @@ export default function CarDetail() {
               <div className="space-y-3">
                 <button className="w-full py-4 bg-primary text-zinc-950 font-bold rounded-xl hover:bg-emerald-400 transition-colors shadow-lg shadow-emerald-900/20 flex items-center justify-center gap-2">
                   <Phone className="w-5 h-5" />
-                  Call Dealership
+                  Appeler la concession
                 </button>
                 <button className="w-full py-4 bg-white text-zinc-950 font-bold rounded-xl hover:bg-zinc-200 transition-colors flex items-center justify-center gap-2">
                   <Mail className="w-5 h-5" />
-                  Email Seller
+                  Envoyer un email
                 </button>
               </div>
 
               <div className="pt-4 text-center">
                 <p className="text-xs text-zinc-500 flex items-center justify-center gap-1">
                   <MapPin className="w-3 h-3" />
-                  Available at Zana Auto New York
+                  Disponible chez Zana Auto Paris
                 </p>
               </div>
 

@@ -8,18 +8,18 @@ export default function Sell() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h1 className="text-5xl font-display font-bold text-white mb-6">Sell Your Car Today</h1>
+          <h1 className="text-5xl font-display font-bold text-white mb-6">Vendez votre voiture aujourd'hui</h1>
           <p className="text-xl text-zinc-400">
-            We offer fair market value for premium vehicles. No hassle, immediate payment, and we handle all the paperwork.
+            Nous offrons une valeur de marché équitable pour les véhicules premium. Pas de tracas, paiement immédiat et nous nous occupons de toute la paperasse.
           </p>
         </div>
 
         {/* Steps */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
           {[
-            { icon: Camera, title: "Send Details", desc: "Submit photos and details of your vehicle online or visit us." },
-            { icon: DollarSign, title: "Get Offer", desc: "Receive a competitive appraisal based on real-time market data." },
-            { icon: Clock, title: "Fast Payment", desc: "Accept our offer and get paid the same day. It's that simple." }
+            { icon: Camera, title: "Envoyez les détails", desc: "Soumettez des photos et des détails de votre véhicule en ligne ou rendez-nous visite." },
+            { icon: DollarSign, title: "Recevez une offre", desc: "Recevez une évaluation compétitive basée sur les données du marché en temps réel." },
+            { icon: Clock, title: "Paiement rapide", desc: "Acceptez notre offre et soyez payé le jour même. C'est aussi simple que cela." }
           ].map((item, i) => (
             <motion.div 
               key={i}
@@ -39,25 +39,25 @@ export default function Sell() {
 
         {/* Contact Methods */}
         <div className="max-w-2xl mx-auto bg-zinc-900 border border-white/5 rounded-3xl p-8 md:p-12 text-center shadow-2xl shadow-black/50">
-          <h2 className="text-3xl font-display font-bold text-white mb-8">Get Your Appraisal Now</h2>
+          <h2 className="text-3xl font-display font-bold text-white mb-8">Obtenez votre évaluation maintenant</h2>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <a 
               href="tel:+15551234567"
               className="flex-1 py-4 bg-primary text-zinc-950 font-bold rounded-xl hover:bg-emerald-400 transition-colors flex items-center justify-center gap-2"
             >
               <Phone className="w-5 h-5" />
-              Call For Appraisal
+              Appeler pour une évaluation
             </a>
             <a 
               href="mailto:acquisitions@zanaauto.com"
               className="flex-1 py-4 bg-white text-zinc-950 font-bold rounded-xl hover:bg-zinc-200 transition-colors flex items-center justify-center gap-2"
             >
               <Mail className="w-5 h-5" />
-              Email Photos
+              Envoyer des photos
             </a>
           </div>
           <p className="mt-8 text-sm text-zinc-500">
-            For fastest service, please have your VIN and mileage ready.
+            Pour un service plus rapide, veuillez avoir votre numéro VIN et votre kilométrage à portée de main.
           </p>
         </div>
 

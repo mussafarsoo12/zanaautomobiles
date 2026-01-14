@@ -7,9 +7,9 @@ interface CarCardProps {
 }
 
 export function CarCard({ car }: CarCardProps) {
-  const formatter = new Intl.NumberFormat("en-US", {
+  const formatter = new Intl.NumberFormat("fr-FR", {
     style: "currency",
-    currency: "USD",
+    currency: "EUR",
     maximumFractionDigits: 0,
   });
 

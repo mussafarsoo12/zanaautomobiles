@@ -10,9 +10,9 @@ export default function Contact() {
           {/* Info Side */}
           <div className="space-y-12">
             <div>
-              <h1 className="text-5xl font-display font-bold text-white mb-6">Get in Touch</h1>
+              <h1 className="text-5xl font-display font-bold text-white mb-6">Contactez-nous</h1>
               <p className="text-xl text-zinc-400 leading-relaxed">
-                Visit our showroom to experience our collection in person. Our team is ready to assist you with any inquiries.
+                Visitez notre salle d'exposition pour découvrir notre collection en personne. Notre équipe est prête à vous aider pour toute demande.
               </p>
             </div>
 
@@ -22,8 +22,8 @@ export default function Contact() {
                   <MapPin className="w-6 h-6" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-white mb-1">Visit Us</h3>
-                  <p className="text-zinc-400">123 Performance Blvd<br />Automotive District, NY 10001</p>
+                  <h3 className="text-lg font-bold text-white mb-1">Nous visiter</h3>
+                  <p className="text-zinc-400">123 Boulevard de la Performance<br />District Automobile, Paris 75001</p>
                 </div>
               </div>
 
@@ -32,8 +32,8 @@ export default function Contact() {
                   <Phone className="w-6 h-6" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-white mb-1">Call Us</h3>
-                  <p className="text-zinc-400">Sales: +1 (555) 123-4567<br />Service: +1 (555) 987-6543</p>
+                  <h3 className="text-lg font-bold text-white mb-1">Nous appeler</h3>
+                  <p className="text-zinc-400">Ventes : +33 (0)1 23 45 67 89<br />Service : +33 (0)1 98 76 54 32</p>
                 </div>
               </div>
 
@@ -43,7 +43,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-white mb-1">Email</h3>
-                  <p className="text-zinc-400">sales@zanaauto.com<br />support@zanaauto.com</p>
+                  <p className="text-zinc-400">ventes@zanaauto.fr<br />support@zanaauto.fr</p>
                 </div>
               </div>
 
@@ -52,8 +52,8 @@ export default function Contact() {
                   <Clock className="w-6 h-6" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-white mb-1">Opening Hours</h3>
-                  <p className="text-zinc-400">Mon - Fri: 9:00 AM - 8:00 PM<br />Saturday: 10:00 AM - 6:00 PM<br />Sunday: Closed</p>
+                  <h3 className="text-lg font-bold text-white mb-1">Horaires d'ouverture</h3>
+                  <p className="text-zinc-400">Lun - Ven : 9:00 - 20:00<br />Samedi : 10:00 - 18:00<br />Dimanche : Fermé</p>
                 </div>
               </div>
             </div>
@@ -65,7 +65,7 @@ export default function Contact() {
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="text-center">
                 <MapPin className="w-12 h-12 text-zinc-600 mx-auto mb-4" />
-                <p className="text-zinc-500 font-medium">Interactive Map Placeholder</p>
+                <p className="text-zinc-500 font-medium">Emplacement de la carte interactive</p>
               </div>
             </div>
             {/* Overlay Gradient */}
