@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { MapPin, Clock } from "lucide-react";
 
 export default function Contact() {
   return (
@@ -23,27 +23,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-white mb-1">Nous visiter</h3>
-                  <p className="text-zinc-400">123 Boulevard de la Performance<br />District Automobile, Paris 75001</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-zinc-900 rounded-lg flex items-center justify-center shrink-0 border border-white/5 text-primary">
-                  <Phone className="w-6 h-6" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold text-white mb-1">Nous appeler</h3>
-                  <p className="text-zinc-400">+41 78 664 12 70</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-zinc-900 rounded-lg flex items-center justify-center shrink-0 border border-white/5 text-primary">
-                  <Mail className="w-6 h-6" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-bold text-white mb-1">Email</h3>
-                  <p className="text-zinc-400">Zana.automobiles@gmail.com</p>
+                  <p className="text-zinc-400">Av. de Lucens 30, 1510 Moudon</p>
                 </div>
               </div>
 
@@ -53,23 +33,24 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-white mb-1">Horaires d'ouverture</h3>
-                  <p className="text-zinc-400">Lun - Ven : 9:00 - 20:00<br />Samedi : 10:00 - 18:00<br />Dimanche : Fermé</p>
+                  <div className="text-zinc-400">
+                    <div>Lundi‑Vendredi<br /><span className="font-medium">9h00‑17h00</span></div>
+                    <div className="mt-1">Samedi et Dimanche<br /><span className="font-medium">Fermé</span></div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Map Side (Placeholder) */}
+          {/* Map Side */}
           <div className="h-full min-h-[400px] bg-zinc-900 rounded-3xl border border-white/5 overflow-hidden relative">
-            <div className="absolute inset-0 bg-zinc-800 animate-pulse" />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center">
-                <MapPin className="w-12 h-12 text-zinc-600 mx-auto mb-4" />
-                <p className="text-zinc-500 font-medium">Emplacement de la carte interactive</p>
-              </div>
-            </div>
-            {/* Overlay Gradient */}
-            <div className="absolute inset-0 pointer-events-none border-[6px] border-zinc-950/20 rounded-3xl" />
+            <iframe
+              title="Zana Automobiles - map"
+              src="https://www.google.com/maps?q=46.6722472,6.806153&z=15&output=embed"
+              className="w-full h-full border-0"
+              allowFullScreen
+              loading="lazy"
+            />
           </div>
 
         </div>

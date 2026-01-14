@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { Facebook, Instagram, Twitter, MapPin, Phone, Mail, Car } from "lucide-react";
+import { Instagram, MapPin, Mail, Car } from "lucide-react";
 
 export function Footer() {
   return (
@@ -21,11 +21,15 @@ export function Footer() {
               Découvrez le summum de l'automobile d'occasion. Nous sélectionnons uniquement les meilleurs véhicules pour garantir fiabilité et satisfaction.
             </p>
             <div className="flex space-x-4 pt-2">
-              {[Facebook, Instagram, Twitter].map((Icon, i) => (
-                <a key={i} href="#" className="text-zinc-500 hover:text-primary transition-colors">
-                  <Icon className="w-5 h-5" />
-                </a>
-              ))}
+              <a
+                href="https://www.instagram.com/zanaautomobiles/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className="text-zinc-500 hover:text-primary transition-colors"
+              >
+                <Instagram className="w-5 h-5" />
+              </a>
             </div>
           </div>
 
@@ -55,11 +59,7 @@ export function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-zinc-400 text-sm">
                 <MapPin className="w-5 h-5 text-primary shrink-0" />
-                <span>123 Boulevard de la Performance,<br />District Automobile, Paris 75001</span>
-              </li>
-              <li className="flex items-center gap-3 text-zinc-400 text-sm">
-                <Phone className="w-5 h-5 text-primary shrink-0" />
-                <span>+41 78 664 12 70</span>
+                <span>Av. de Lucens 30, 1510 Moudon</span>
               </li>
               <li className="flex items-center gap-3 text-zinc-400 text-sm">
                 <Mail className="w-5 h-5 text-primary shrink-0" />
@@ -73,12 +73,12 @@ export function Footer() {
             <h4 className="text-white font-display font-bold mb-6">Horaires</h4>
             <ul className="space-y-2 text-sm text-zinc-400">
               <li className="flex justify-between">
-                <span>Lun - Ven</span>
-                <span className="text-white">9:00 - 20:00</span>
+                <span>Lundi - Vendredi</span>
+                <span className="text-white">9:00 - 17:00</span>
               </li>
               <li className="flex justify-between">
                 <span>Samedi</span>
-                <span className="text-white">10:00 - 18:00</span>
+                <span className="text-primary">Fermé</span>
               </li>
               <li className="flex justify-between">
                 <span>Dimanche</span>
@@ -89,11 +89,8 @@ export function Footer() {
         </div>
 
         <div className="border-t border-white/5 pt-8 text-center md:text-left flex flex-col md:flex-row justify-between items-center text-xs text-zinc-600">
-          <p>© 2024 Zana Automobiles. Tous droits réservés.</p>
-          <div className="flex gap-6 mt-4 md:mt-0">
-            <a href="#" className="hover:text-zinc-400">Politique de confidentialité</a>
-            <a href="#" className="hover:text-zinc-400">Conditions d'utilisation</a>
-          </div>
+          <p>© 2026 Zana Automobiles. Tous droits réservés.</p>
+          <div className="flex gap-6 mt-4 md:mt-0" />
         </div>
       </div>
     </footer>

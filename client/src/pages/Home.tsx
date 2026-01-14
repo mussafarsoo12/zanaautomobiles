@@ -38,7 +38,7 @@ export default function Home() {
           >
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-bold mb-6">
               <Star className="w-3.5 h-3.5 fill-primary" />
-              <span>Sélection Premium 2024</span>
+              <span>Sélection 2026</span>
             </div>
             <h1 className="text-5xl md:text-7xl font-display font-bold text-white leading-tight mb-6">
               Conduisez l'<span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-200">Extraordinaire</span>
@@ -73,12 +73,12 @@ export default function Home() {
               { 
                 icon: Shield, 
                 title: "Qualité Certifiée", 
-                desc: "Chaque véhicule subit une inspection rigoureuse en 150 points par nos maîtres techniciens." 
+                desc: "Véhicules soigneusement contrôlés." 
               },
               { 
                 icon: Zap, 
                 title: "Financement Instantané", 
-                desc: "Obtenez une approbation en quelques minutes avec nos taux compétitifs et nos plans de paiement flexibles." 
+                desc: "Obtenez une approbation avec nos taux compétitifs et nos plans de paiement flexibles." 
               },
               { 
                 icon: Star, 
@@ -170,11 +170,8 @@ export default function Home() {
       {/* CTA Section */}
       <section className="py-24 relative overflow-hidden">
         <div className="absolute inset-0 bg-primary/10"></div>
-        <div className="relative max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">Prêt à trouver la voiture de vos rêves ?</h2>
-          <p className="text-xl text-zinc-300 mb-10 max-w-2xl mx-auto">
-            Visitez notre salle d'exposition aujourd'hui ou planifiez un essai routier en ligne. Votre voyage vers l'excellence commence ici.
-          </p>
+          <div className="relative max-w-4xl mx-auto px-4 text-center">
+          <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">Prêt à trouver votre voiture ?</h2>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
              <Link 
                 href="/contact"

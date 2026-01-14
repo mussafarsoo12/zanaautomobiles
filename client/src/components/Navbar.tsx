@@ -1,5 +1,5 @@
 import { Link, useLocation } from "wouter";
-import { Car, Menu, X, Phone, Search } from "lucide-react";
+import { Car, Menu, X, Mail, Search } from "lucide-react";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -45,13 +45,13 @@ export function Navbar() {
               </Link>
             ))}
             
-            <Link 
-              href="/contact"
+            <a
+              href="mailto:Zana.automobiles@gmail.com"
               className="bg-primary hover:bg-emerald-400 text-zinc-950 font-bold px-5 py-2.5 rounded-lg transition-all duration-300 flex items-center gap-2 shadow-lg shadow-emerald-900/20 hover:shadow-emerald-500/20 hover:-translate-y-0.5"
             >
-              <Phone className="w-4 h-4" />
-              <span>Nous appeler</span>
-            </Link>
+              <Mail className="w-4 h-4" />
+              <span>Contactez-nous</span>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -89,14 +89,14 @@ export function Navbar() {
                 </Link>
               ))}
               <div className="pt-4 border-t border-white/5">
-                <Link 
-                  href="/contact"
+                <a
+                  href="mailto:Zana.automobiles@gmail.com"
                   onClick={() => setIsOpen(false)}
                   className="w-full bg-primary text-zinc-950 font-bold py-3 rounded-lg flex items-center justify-center gap-2"
                 >
-                  <Phone className="w-5 h-5" />
-                  Appelez-nous maintenant
-                </Link>
+                  <Mail className="w-5 h-5" />
+                  Contactez-nous
+                </a>
               </div>
             </div>
           </motion.div>

@@ -10,7 +10,7 @@ export default function Sell() {
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h1 className="text-5xl font-display font-bold text-white mb-6">Vendez votre voiture aujourd'hui</h1>
           <p className="text-xl text-zinc-400">
-            Nous offrons une valeur de marché équitable pour les véhicules premium. Pas de tracas, paiement immédiat et nous nous occupons de toute la paperasse.
+            Vous souhaitez vendre votre véhicule ? Contactez-nous pour une estimation rapide.
           </p>
         </div>
 
@@ -19,7 +19,7 @@ export default function Sell() {
           {[
             { icon: Camera, title: "Envoyez les détails", desc: "Soumettez des photos et des détails de votre véhicule en ligne ou rendez-nous visite." },
             { icon: DollarSign, title: "Recevez une offre", desc: "Recevez une évaluation compétitive basée sur les données du marché en temps réel." },
-            { icon: Clock, title: "Paiement rapide", desc: "Acceptez notre offre et soyez payé le jour même. C'est aussi simple que cela." }
+            { icon: Clock, title: "Paiement rapide", desc: "Acceptez notre offre — c'est simple et rapide." }
           ].map((item, i) => (
             <motion.div 
               key={i}
@@ -37,28 +37,19 @@ export default function Sell() {
           ))}
         </div>
 
-        {/* Contact Methods */}
+        {/* Contact Methods - single mailto button retained per request */}
         <div className="max-w-2xl mx-auto bg-zinc-900 border border-white/5 rounded-3xl p-8 md:p-12 text-center shadow-2xl shadow-black/50">
-          <h2 className="text-3xl font-display font-bold text-white mb-8">Obtenez votre évaluation maintenant</h2>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <a 
-              href="tel:+41786641270"
-              className="flex-1 py-4 bg-primary text-zinc-950 font-bold rounded-xl hover:bg-emerald-400 transition-colors flex items-center justify-center gap-2"
-            >
-              <Phone className="w-5 h-5" />
-              Appeler pour une évaluation
-            </a>
-            <a 
-              href="mailto:Zana.automobiles@gmail.com"
-              className="flex-1 py-4 bg-white text-zinc-950 font-bold rounded-xl hover:bg-zinc-200 transition-colors flex items-center justify-center gap-2"
-            >
-              <Mail className="w-5 h-5" />
-              Envoyer des photos
-            </a>
+          <div className="mb-6">
+            <h2 className="text-2xl font-display font-bold text-white">Envoyer des photos</h2>
+            <p className="text-zinc-400 mt-2">Envoyez-nous des photos de votre véhicule pour recevoir une estimation.</p>
           </div>
-          <p className="mt-8 text-sm text-zinc-500">
-            Pour un service plus rapide, veuillez avoir votre numéro VIN et votre kilométrage à portée de main.
-          </p>
+          <a
+            href="mailto:Zana.automobiles@gmail.com"
+            className="inline-flex items-center gap-2 bg-white text-zinc-950 font-bold py-3 px-6 rounded-xl hover:bg-zinc-200 transition-colors"
+          >
+            <Mail className="w-5 h-5" />
+            Envoyer des photos
+          </a>
         </div>
 
       </div>
