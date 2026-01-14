@@ -87,7 +87,7 @@ async function seedDatabase() {
       },
       {
         make: "Nissan",
-        model: "Qashqai",
+        model: "Qashqai+2",
         year: 2009,
         price: "1900",
         mileage: 349000,
@@ -95,12 +95,18 @@ async function seedDatabase() {
         transmission: "Automatique",
         bodyType: "SUV / Tout-terrain",
         condition: "Occasion",
-        exteriorColor: "Gris",
+        exteriorColor: "Gris clair métal",
         interiorColor: "Tissu",
         availability: "Vendu",
-        images: ["https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=1600"],
-        features: ["4 roues motrices", "150 PS", "Diesel"],
-        description: "12.2009. Diesel. 349'000 km. 150 PS (110 kW). Automatique. 7.9 l/100 km.",
+        images: [
+          "@assets/1_1768400697795.png",
+          "@assets/2_1768400697795.jpeg",
+          "@assets/4_1768400697795.jpeg",
+          "@assets/3_1768400697795.jpeg",
+          "@assets/5_1768400697795.jpeg"
+        ],
+        features: ["4 roues motrices", "150 PS", "Diesel", "7 places", "Expertisée"],
+        description: "12.2009. Nissan Qashqai+2 (7 places). Diesel. 349'813 km. 150 PS (110 kW). Automatique. 4WD. Expertise faite le 14.07.2022.",
         isFeatured: false
       },
       {
