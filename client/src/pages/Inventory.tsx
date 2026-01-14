@@ -1,7 +1,7 @@
 import { useCars } from "@/hooks/use-cars";
 import { CarCard } from "@/components/CarCard";
 import { useState } from "react";
-import { Search, Filter } from "lucide-react";
+import { Search, ExternalLink } from "lucide-react";
 
 export default function Inventory() {
   const { data: cars, isLoading, error } = useCars();
@@ -34,9 +34,15 @@ export default function Inventory() {
                 className="w-full bg-zinc-900 border border-zinc-800 rounded-xl py-3 pl-10 pr-4 text-white placeholder:text-zinc-600 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all"
               />
             </div>
-            <button className="px-4 py-3 bg-zinc-900 border border-zinc-800 rounded-xl text-zinc-400 hover:text-white hover:border-zinc-700 transition-colors">
-              <Filter className="w-5 h-5" />
-            </button>
+            <a
+              href="https://www.autoscout24.ch/fr/s/seller-2497810"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-3 md:px-4 py-3 bg-primary text-zinc-950 font-semibold md:font-bold rounded-xl hover:bg-emerald-400 transition-colors shadow-lg shadow-emerald-900/20 text-sm md:text-base leading-tight whitespace-normal md:whitespace-nowrap"
+            >
+              Voir nos véhicules sur Autoscout
+              <ExternalLink className="w-4 h-4" />
+            </a>
           </div>
         </div>
 

@@ -1,4 +1,4 @@
-import { MapPin, Clock } from "lucide-react";
+import { MapPin, Clock, Mail } from "lucide-react";
 
 export default function Contact() {
   return (
@@ -17,6 +17,21 @@ export default function Contact() {
             </div>
 
             <div className="space-y-8">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-zinc-900 rounded-lg flex items-center justify-center shrink-0 border border-white/5 text-primary">
+                  <Mail className="w-6 h-6" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-white mb-1">Nous écrire</h3>
+                  <a
+                    href="mailto:Zana.automobiles@gmail.com"
+                    className="text-zinc-200 hover:text-white font-medium transition-colors"
+                  >
+                    Zana.automobiles@gmail.com
+                  </a>
+                </div>
+              </div>
+
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-zinc-900 rounded-lg flex items-center justify-center shrink-0 border border-white/5 text-primary">
                   <MapPin className="w-6 h-6" />

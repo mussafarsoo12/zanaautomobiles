@@ -40,8 +40,9 @@ export default function Home() {
               <Star className="w-3.5 h-3.5 fill-primary" />
               <span>Sélection 2026</span>
             </div>
-            <h1 className="text-5xl md:text-7xl font-display font-bold text-white leading-tight mb-6">
-              Conduisez l'<span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-200">Extraordinaire</span>
+            <h1 className="text-4xl md:text-7xl font-display font-bold text-white leading-tight mb-6">
+              Bienvenue chez
+              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-200">Zana Automobiles</span>
             </h1>
             <p className="text-lg md:text-xl text-zinc-300 mb-10 leading-relaxed max-w-lg">
               Découvrez une collection de véhicules d'occasion rigoureusement sélectionnés. La voiture qu'il vous faut vous attend chez Zana Automobiles.

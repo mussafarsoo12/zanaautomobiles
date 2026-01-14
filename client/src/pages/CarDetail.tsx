@@ -33,6 +33,25 @@ export default function CarDetail() {
     );
   }
 
+  const autoScoutUrl =
+    car.make === "Fiat" && car.model.includes("500") && car.year === 2009
+      ? "https://www.autoscout24.ch/fr/d/fiat-500-14-16v-sport-12433366"
+      : car.make === "Renault" && car.model.includes("Mégane") && car.year === 2006
+        ? "https://www.autoscout24.ch/fr/d/renault-megane-c-c-20-16v-t-privilege-luxe-12836415"
+        : car.make === "Hyundai" && car.model.includes("i30") && car.year === 2009
+          ? "https://www.autoscout24.ch/fr/d/hyundai-i30-16-swiss-plus-edition-automatic-20074759"
+          : car.make === "Nissan" && car.model.includes("Qashqai") && car.year === 2009
+            ? "https://www.autoscout24.ch/fr/d/nissan-qashqai-2-20-dci-4wd-acenta-automatic-20074745"
+            : car.make === "VW" && car.model.includes("Fox") && car.year === 2006
+              ? "https://www.autoscout24.ch/fr/d/vw-fox-14-12576177"
+              : car.make === "Mercedes-Benz" && car.model.includes("GLE") && car.year === 2019
+                ? "https://www.autoscout24.ch/fr/d/mercedes-benz-gle-coupe-43-amg-4matic-9g-tronic-20071900"
+                : undefined;
+
+  const primaryCtaHref = autoScoutUrl ?? "tel:+41786641270";
+  const primaryCtaTarget = autoScoutUrl ? "_blank" : undefined;
+  const primaryCtaRel = autoScoutUrl ? "noopener noreferrer" : undefined;
+
   const formatter = new Intl.NumberFormat("fr-CH", {
     style: "currency",
     currency: "CHF",
@@ -150,7 +169,7 @@ export default function CarDetail() {
               <div className="space-y-3">
                 <button className="w-full py-4 bg-primary text-zinc-950 font-bold rounded-xl hover:bg-emerald-400 transition-colors shadow-lg shadow-emerald-900/20 flex items-center justify-center gap-2">
                   <Phone className="w-5 h-5" />
-                  <a href="tel:+41786641270">Appeler la concession</a>
+                  <a href={primaryCtaHref} target={primaryCtaTarget} rel={primaryCtaRel}>Voir sur Autoscout</a>
                 </button>
                 <button className="w-full py-4 bg-white text-zinc-950 font-bold rounded-xl hover:bg-zinc-200 transition-colors flex items-center justify-center gap-2">
                   <Mail className="w-5 h-5" />
