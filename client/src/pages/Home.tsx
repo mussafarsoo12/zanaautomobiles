@@ -103,7 +103,7 @@ export default function Home() {
       <section className="py-24 bg-zinc-900/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 flex justify-between items-end">
           <div>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-2">Véhicules en vedette</h2>
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-2">Véhicules en vente</h2>
             <p className="text-zinc-400">Sélectionnés pour leur performance et leur style</p>
           </div>
           <Link href="/inventory" className="hidden md:flex items-center gap-2 text-primary hover:text-emerald-300 font-medium transition-colors">
