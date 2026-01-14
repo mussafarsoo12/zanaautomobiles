@@ -47,31 +47,26 @@ export default function Inventory() {
               <div key={i} className="aspect-[16/10] bg-zinc-900 rounded-2xl animate-pulse" />
             ))}
           </div>
+        ) : error ? (
+          <div className="py-20 text-center">
+            <h3 className="text-xl font-bold text-white mb-2">Impossible de charger l'inventaire</h3>
+            <p className="text-zinc-500 mb-4">Le serveur d'API n'est pas disponible ou mal configuré.</p>
+            <p className="text-zinc-400">Vérifiez la variable d'environnement <strong>VITE_API_BASE</strong> ou le déploiement de votre backend.</p>
+          </div>
+        ) : filteredCars && filteredCars.length > 0 ? (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {filteredCars.map((car) => (
+              <CarCard key={car.id} car={car} />
+            ))}
+          </div>
         ) : (
-          error ? (
-            <div className="py-20 text-center">
-              <h3 className="text-xl font-bold text-white mb-2">Impossible de charger l'inventaire</h3>
-              <p className="text-zinc-500 mb-4">Le serveur d'API n'est pas disponible ou mal configuré.</p>
-              <p className="text-zinc-400">Vérifiez la variable d'environnement <strong>VITE_API_BASE</strong> ou le déploiement de votre backend.</p>
+          <div className="py-20 text-center">
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-zinc-900 mb-4">
+              <Search className="w-8 h-8 text-zinc-600" />
             </div>
-          ) : (
-          <>
-            {filteredCars && filteredCars.length > 0 ? (
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {filteredCars.map((car) => (
-                  <CarCard key={car.id} car={car} />
-                ))}
-              </div>
-            ) : (
-              <div className="py-20 text-center">
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-zinc-900 mb-4">
-                  <Search className="w-8 h-8 text-zinc-600" />
-                </div>
-                <h3 className="text-xl font-bold text-white mb-2">Aucun véhicule trouvé</h3>
-                <p className="text-zinc-500">Essayez d'ajuster vos termes de recherche</p>
-              </div>
-            )}
-          </>
+            <h3 className="text-xl font-bold text-white mb-2">Aucun véhicule trouvé</h3>
+            <p className="text-zinc-500">Essayez d'ajuster vos termes de recherche</p>
+          </div>
         )}
       </div>
     </div>
