@@ -177,12 +177,23 @@ async function seedDatabase() {
         transmission: "Manuelle",
         bodyType: "Cabriolet",
         condition: "Occasion",
-        exteriorColor: "Gris",
-        interiorColor: "Cuir",
+        exteriorColor: "Bleu",
+        interiorColor: "Cuir Noir",
         availability: "Disponible",
-        images: ["https://images.unsplash.com/photo-1541899481282-d53bffe3c15d?auto=format&fit=crop&q=80&w=1600"],
-        features: ["Privilège Luxe", "Cabriolet", "Expertisée"],
-        description: "04.2006. Essence. 271'000 km. 163 PS (120 kW). Boîte manuelle. 8 l/100 km. Dernière MFK : 14.10.2025.",
+        images: [
+          "@assets/1_1768400778949.jpeg",
+          "@assets/7_1768400778949.jpeg",
+          "@assets/4_1768400778949.jpeg",
+          "@assets/2_1768400778950.jpeg",
+          "@assets/6_1768400778949.jpeg",
+          "@assets/11_1768400778949.jpeg",
+          "@assets/9_1768400778950.jpeg",
+          "@assets/5_1768400778950.jpeg",
+          "@assets/3_1768400778950.jpeg",
+          "@assets/10_1768400778949.jpeg"
+        ],
+        features: ["Privilège Luxe", "Cabriolet", "Sièges en cuir", "Expertisée", "Dernière MFK : 15.12.2023"],
+        description: "04.2006. Renault Mégane II 2.0 16V Cabriolet. Essence. 271'000 km. 163 PS (120 kW). Boîte manuelle. Expertise récente (MFK) du 15.12.2023. Véhicule cabriolet idéal pour l'été.",
         isFeatured: true
       }
     ];
