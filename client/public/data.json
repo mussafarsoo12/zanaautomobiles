@@ -12,14 +12,14 @@
 		"interiorColor": "Cuir Noir",
 		"availability": "Disponible",
 		"images": [
-			"@assets/1_1768400605092.jpeg",
-			"@assets/6_1768400605093.jpeg",
-			"@assets/7_1768400605093.jpeg",
-			"@assets/2_1768400605093.jpeg",
-			"@assets/4_1768400605093.jpeg",
-			"@assets/8_1768400605093.jpeg",
-			"@assets/3_1768400605094.jpeg",
-			"@assets/5_1768400605093.jpeg"
+			"/attached_assets/1_1768400605092.jpeg",
+			"/attached_assets/6_1768400605093.jpeg",
+			"/attached_assets/7_1768400605093.jpeg",
+			"/attached_assets/2_1768400605093.jpeg",
+			"/attached_assets/4_1768400605093.jpeg",
+			"/attached_assets/8_1768400605093.jpeg",
+			"/attached_assets/3_1768400605094.jpeg",
+			"/attached_assets/5_1768400605093.jpeg"
 		],
 		"features": [
 			"AMG Line",
@@ -47,19 +47,19 @@
 		"interiorColor": "Tissu à rayures",
 		"availability": "Disponible",
 		"images": [
-			"@assets/1_1768400866713.jpeg",
-			"@assets/3_1768400866713.jpeg",
-			"@assets/12_1768400866713.jpeg",
-			"@assets/4_1768400866713.jpeg",
-			"@assets/5_1768400866713.jpeg",
-			"@assets/6_1768400866713.jpeg",
-			"@assets/7_1768400866713.jpeg",
-			"@assets/10_1768400866713.jpeg",
-			"@assets/11_1768400866713.jpeg",
-			"@assets/13_1768400866713.jpeg",
-			"@assets/8_1768400866713.jpeg",
-			"@assets/9_1768400866713.jpeg",
-			"@assets/2_1768400866713.jpeg"
+			"/attached_assets/1_1768400866713.jpeg",
+			"/attached_assets/3_1768400866713.jpeg",
+			"/attached_assets/12_1768400866713.jpeg",
+			"/attached_assets/4_1768400866713.jpeg",
+			"/attached_assets/5_1768400866713.jpeg",
+			"/attached_assets/6_1768400866713.jpeg",
+			"/attached_assets/7_1768400866713.jpeg",
+			"/attached_assets/10_1768400866713.jpeg",
+			"/attached_assets/11_1768400866713.jpeg",
+			"/attached_assets/13_1768400866713.jpeg",
+			"/attached_assets/8_1768400866713.jpeg",
+			"/attached_assets/9_1768400866713.jpeg",
+			"/attached_assets/2_1768400866713.jpeg"
 		],
 		"features": [
 			"Traction avant",
@@ -86,11 +86,11 @@
 		"interiorColor": "Tissu",
 		"availability": "Vendu",
 		"images": [
-			"@assets/1_1768400697795.png",
-			"@assets/2_1768400697795.jpeg",
-			"@assets/4_1768400697795.jpeg",
-			"@assets/3_1768400697795.jpeg",
-			"@assets/5_1768400697795.jpeg"
+			"/attached_assets/1_1768400697795.png",
+			"/attached_assets/2_1768400697795.jpeg",
+			"/attached_assets/4_1768400697795.jpeg",
+			"/attached_assets/3_1768400697795.jpeg",
+			"/attached_assets/5_1768400697795.jpeg"
 		],
 		"features": [
 			"4 roues motrices",
@@ -117,11 +117,11 @@
 		"interiorColor": "Tissu",
 		"availability": "Disponible",
 		"images": [
-			"@assets/1_1768400339063.jpeg",
-			"@assets/3_1768400339065.jpeg",
-			"@assets/4_1768400339065.jpeg",
-			"@assets/6_1768400339064.jpeg",
-			"@assets/7_1768400339065.jpeg"
+			"/attached_assets/1_1768400339063.jpeg",
+			"/attached_assets/3_1768400339065.jpeg",
+			"/attached_assets/4_1768400339065.jpeg",
+			"/attached_assets/6_1768400339064.jpeg",
+			"/attached_assets/7_1768400339065.jpeg"
 		],
 		"features": [
 			"Swiss Plus Edition",
@@ -147,21 +147,21 @@
 		"interiorColor": "Beige",
 		"availability": "Disponible",
 		"images": [
-			"@assets/1_1768400154338.jpeg",
-			"@assets/2_1768400154338.jpeg",
-			"@assets/3_1768400154339.jpeg",
-			"@assets/4_1768400154338.jpeg",
-			"@assets/5_1768400154338.jpeg",
-			"@assets/6_1768400154338.jpeg",
-			"@assets/7_1768400154338.jpeg",
-			"@assets/8_1768400154338.jpeg",
-			"@assets/9_1768400154338.jpeg",
-			"@assets/10_1768400154338.jpeg",
-			"@assets/11_1768400154338.jpeg",
-			"@assets/12_1768400154339.jpeg",
-			"@assets/13_1768400154339.jpeg",
-			"@assets/14_1768400154338.jpeg",
-			"@assets/15_1768400154338.jpeg"
+			"/attached_assets/1_1768400154338.jpeg",
+			"/attached_assets/2_1768400154338.jpeg",
+			"/attached_assets/3_1768400154339.jpeg",
+			"/attached_assets/4_1768400154338.jpeg",
+			"/attached_assets/5_1768400154338.jpeg",
+			"/attached_assets/6_1768400154338.jpeg",
+			"/attached_assets/7_1768400154338.jpeg",
+			"/attached_assets/8_1768400154338.jpeg",
+			"/attached_assets/9_1768400154338.jpeg",
+			"/attached_assets/10_1768400154338.jpeg",
+			"/attached_assets/11_1768400154338.jpeg",
+			"/attached_assets/12_1768400154339.jpeg",
+			"/attached_assets/13_1768400154339.jpeg",
+			"/attached_assets/14_1768400154338.jpeg",
+			"/attached_assets/15_1768400154338.jpeg"
 		],
 		"features": [
 			"Toit ouvrant",
@@ -187,16 +187,16 @@
 		"interiorColor": "Cuir Noir",
 		"availability": "Disponible",
 		"images": [
-			"@assets/1_1768400778949.jpeg",
-			"@assets/7_1768400778949.jpeg",
-			"@assets/4_1768400778949.jpeg",
-			"@assets/2_1768400778950.jpeg",
-			"@assets/6_1768400778949.jpeg",
-			"@assets/11_1768400778949.jpeg",
-			"@assets/9_1768400778950.jpeg",
-			"@assets/5_1768400778950.jpeg",
-			"@assets/3_1768400778950.jpeg",
-			"@assets/10_1768400778949.jpeg"
+			"/attached_assets/1_1768400778949.jpeg",
+			"/attached_assets/7_1768400778949.jpeg",
+			"/attached_assets/4_1768400778949.jpeg",
+			"/attached_assets/2_1768400778950.jpeg",
+			"/attached_assets/6_1768400778949.jpeg",
+			"/attached_assets/11_1768400778949.jpeg",
+			"/attached_assets/9_1768400778950.jpeg",
+			"/attached_assets/5_1768400778950.jpeg",
+			"/attached_assets/3_1768400778950.jpeg",
+			"/attached_assets/10_1768400778949.jpeg"
 		],
 		"features": [
 			"Privilège Luxe",
