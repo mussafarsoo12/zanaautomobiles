@@ -44,7 +44,7 @@ export default function Home() {
               Conduisez l'<span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-emerald-200">Extraordinaire</span>
             </h1>
             <p className="text-lg md:text-xl text-zinc-300 mb-10 leading-relaxed max-w-lg">
-              Découvrez une collection de véhicules de luxe et de haute performance. La voiture de vos rêves vous attend chez Zana Automobiles.
+              Découvrez une collection de véhicules d'occasion rigoureusement sélectionnés. La voiture qu'il vous faut vous attend chez Zana Automobiles.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link 

@@ -14,11 +14,11 @@ export function Footer() {
                 <Car className="w-5 h-5 text-zinc-950" />
               </div>
               <span className="font-display font-bold text-xl tracking-tight text-white">
-                ZANA<span className="text-primary">AUTO</span>
+                ZANA <span className="text-primary">AUTOMOBILES</span>
               </span>
             </Link>
             <p className="text-zinc-400 leading-relaxed text-sm">
-              Découvrez le summum de l'excellence automobile. Nous sélectionnons uniquement les meilleurs véhicules pour les conducteurs exigeants qui recherchent performance et luxe.
+              Découvrez le summum de l'automobile d'occasion. Nous sélectionnons uniquement les meilleurs véhicules pour garantir fiabilité et satisfaction.
             </p>
             <div className="flex space-x-4 pt-2">
               {[Facebook, Instagram, Twitter].map((Icon, i) => (
@@ -59,11 +59,11 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3 text-zinc-400 text-sm">
                 <Phone className="w-5 h-5 text-primary shrink-0" />
-                <span>+33 (0)1 23 45 67 89</span>
+                <span>+41 78 664 12 70</span>
               </li>
               <li className="flex items-center gap-3 text-zinc-400 text-sm">
                 <Mail className="w-5 h-5 text-primary shrink-0" />
-                <span>ventes@zanaauto.fr</span>
+                <span>Zana.automobiles@gmail.com</span>
               </li>
             </ul>
           </div>

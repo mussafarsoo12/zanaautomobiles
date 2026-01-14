@@ -33,9 +33,9 @@ export default function CarDetail() {
     );
   }
 
-  const formatter = new Intl.NumberFormat("fr-FR", {
+  const formatter = new Intl.NumberFormat("fr-CH", {
     style: "currency",
-    currency: "EUR",
+    currency: "CHF",
     maximumFractionDigits: 0,
   });
 
@@ -150,18 +150,18 @@ export default function CarDetail() {
               <div className="space-y-3">
                 <button className="w-full py-4 bg-primary text-zinc-950 font-bold rounded-xl hover:bg-emerald-400 transition-colors shadow-lg shadow-emerald-900/20 flex items-center justify-center gap-2">
                   <Phone className="w-5 h-5" />
-                  Appeler la concession
+                  <a href="tel:+41786641270">Appeler la concession</a>
                 </button>
                 <button className="w-full py-4 bg-white text-zinc-950 font-bold rounded-xl hover:bg-zinc-200 transition-colors flex items-center justify-center gap-2">
                   <Mail className="w-5 h-5" />
-                  Envoyer un email
+                  <a href="mailto:Zana.automobiles@gmail.com">Envoyer un email</a>
                 </button>
               </div>
 
               <div className="pt-4 text-center">
                 <p className="text-xs text-zinc-500 flex items-center justify-center gap-1">
                   <MapPin className="w-3 h-3" />
-                  Disponible chez Zana Auto Paris
+                  Disponible chez Zana Automobiles
                 </p>
               </div>
 

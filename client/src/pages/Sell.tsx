@@ -42,14 +42,14 @@ export default function Sell() {
           <h2 className="text-3xl font-display font-bold text-white mb-8">Obtenez votre évaluation maintenant</h2>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <a 
-              href="tel:+15551234567"
+              href="tel:+41786641270"
               className="flex-1 py-4 bg-primary text-zinc-950 font-bold rounded-xl hover:bg-emerald-400 transition-colors flex items-center justify-center gap-2"
             >
               <Phone className="w-5 h-5" />
               Appeler pour une évaluation
             </a>
             <a 
-              href="mailto:acquisitions@zanaauto.com"
+              href="mailto:Zana.automobiles@gmail.com"
               className="flex-1 py-4 bg-white text-zinc-950 font-bold rounded-xl hover:bg-zinc-200 transition-colors flex items-center justify-center gap-2"
             >
               <Mail className="w-5 h-5" />

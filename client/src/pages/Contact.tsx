@@ -33,7 +33,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-white mb-1">Nous appeler</h3>
-                  <p className="text-zinc-400">Ventes : +33 (0)1 23 45 67 89<br />Service : +33 (0)1 98 76 54 32</p>
+                  <p className="text-zinc-400">+41 78 664 12 70</p>
                 </div>
               </div>
 
@@ -43,7 +43,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-white mb-1">Email</h3>
-                  <p className="text-zinc-400">ventes@zanaauto.fr<br />support@zanaauto.fr</p>
+                  <p className="text-zinc-400">Zana.automobiles@gmail.com</p>
                 </div>
               </div>
 

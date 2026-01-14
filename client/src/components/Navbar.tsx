@@ -27,7 +27,7 @@ export function Navbar() {
               <Car className="w-6 h-6 text-zinc-950" />
             </div>
             <span className="font-display font-bold text-2xl tracking-tight text-white">
-              ZANA<span className="text-primary">AUTO</span>
+              ZANA <span className="text-primary">AUTOMOBILES</span>
             </span>
           </Link>
 
