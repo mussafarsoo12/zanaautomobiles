@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Search, Filter } from "lucide-react";
 
 export default function Inventory() {
-  const { data: cars, isLoading } = useCars();
+  const { data: cars, isLoading, error } = useCars();
   const [searchTerm, setSearchTerm] = useState("");
 
   const filteredCars = cars?.filter(car => 
@@ -48,6 +48,13 @@ export default function Inventory() {
             ))}
           </div>
         ) : (
+          error ? (
+            <div className="py-20 text-center">
+              <h3 className="text-xl font-bold text-white mb-2">Impossible de charger l'inventaire</h3>
+              <p className="text-zinc-500 mb-4">Le serveur d'API n'est pas disponible ou mal configuré.</p>
+              <p className="text-zinc-400">Vérifiez la variable d'environnement <strong>VITE_API_BASE</strong> ou le déploiement de votre backend.</p>
+            </div>
+          ) : (
           <>
             {filteredCars && filteredCars.length > 0 ? (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
