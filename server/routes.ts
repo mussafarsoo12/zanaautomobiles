@@ -50,12 +50,21 @@ async function seedDatabase() {
         transmission: "Automatique",
         bodyType: "SUV / Tout-terrain",
         condition: "Occasion",
-        exteriorColor: "Noir",
-        interiorColor: "Cuir",
+        exteriorColor: "Blanc",
+        interiorColor: "Cuir Noir",
         availability: "Disponible",
-        images: ["https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&q=80&w=1600"],
-        features: ["AMG Line", "4Matic", "9G-Tronic", "Expertisée"],
-        description: "Date de mise en circulation : 06.2019. Puissance : 390 PS (287 kW). Consommation mixte : 12.6 l/100 km. Transmission : 4 roues motrices. Expertisée : Oui (14.06.2022).",
+        images: [
+          "@assets/1_1768400605092.jpeg",
+          "@assets/6_1768400605093.jpeg",
+          "@assets/7_1768400605093.jpeg",
+          "@assets/2_1768400605093.jpeg",
+          "@assets/4_1768400605093.jpeg",
+          "@assets/8_1768400605093.jpeg",
+          "@assets/3_1768400605094.jpeg",
+          "@assets/5_1768400605093.jpeg"
+        ],
+        features: ["AMG Line", "4Matic", "9G-Tronic", "Sièges chauffants", "Toit ouvrant", "Expertisée"],
+        description: "Date de mise en circulation : 06.2019. Mercedes GLE 43 AMG Coupé. Véhicule très propre, entretenu régulièrement. Pack AMG complet, sonorité exceptionnelle. Expertisée récemment.",
         isFeatured: true
       },
       {
