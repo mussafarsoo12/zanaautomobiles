@@ -100,12 +100,18 @@ async function seedDatabase() {
         transmission: "Automatique",
         bodyType: "Berline",
         condition: "Occasion",
-        exteriorColor: "Bleu",
+        exteriorColor: "Gris foncé",
         interiorColor: "Tissu",
         availability: "Disponible",
-        images: ["https://images.unsplash.com/photo-1503376763036-066120622c74?auto=format&fit=crop&q=80&w=1600"],
-        features: ["Swiss Plus Edition", "Traction avant", "126 PS"],
-        description: "07.2009. Essence. 198'000 km. 126 PS (93 kW). Automatique. 6.9 l/100 km.",
+        images: [
+          "@assets/1_1768400339063.jpeg",
+          "@assets/3_1768400339065.jpeg",
+          "@assets/4_1768400339065.jpeg",
+          "@assets/6_1768400339064.jpeg",
+          "@assets/7_1768400339065.jpeg"
+        ],
+        features: ["Swiss Plus Edition", "Traction avant", "126 PS", "Expertisée"],
+        description: "07.2009. Essence. 198'000 km. 126 PS (93 kW). Automatique. 6.9 l/100 km. Expertise faite le 06.07.2022.",
         isFeatured: true
       },
       {
