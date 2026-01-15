@@ -2,9 +2,9 @@ import { useCar } from "@/hooks/use-cars";
 import { useRoute, Link } from "wouter";
 import { 
   ArrowLeft, Calendar, Fuel, Gauge, Share2, Phone, Mail, CheckCircle2,
-  ChevronRight, MapPin
+  ChevronRight, MapPin, X, ChevronLeft, ChevronDown
 } from "lucide-react";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 
 export default function CarDetail() {
@@ -12,6 +12,8 @@ export default function CarDetail() {
   const id = parseInt(params?.id || "0");
   const { data: car, isLoading, error } = useCar(id);
   const [activeImage, setActiveImage] = useState(0);
+  const [fullscreenMode, setFullscreenMode] = useState(false);
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   if (isLoading) {
     return (
@@ -80,16 +82,29 @@ export default function CarDetail() {
             
             {/* Gallery */}
             <div className="space-y-4">
-              <div className="aspect-[16/10] w-full rounded-2xl overflow-hidden bg-zinc-900 border border-white/5 relative group">
+              {/* Main Image - Click to open fullscreen on mobile */}
+              <div 
+                onClick={() => setFullscreenMode(true)}
+                className="aspect-[16/10] w-full rounded-2xl overflow-hidden bg-zinc-900 border border-white/5 relative group cursor-pointer md:cursor-default"
+              >
                 <img 
                   src={car.images[activeImage].startsWith('@assets/') ? car.images[activeImage].replace('@assets/', '/attached_assets/') : car.images[activeImage]} 
                   alt={car.model}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute top-4 right-4 bg-zinc-950/80 backdrop-blur-md px-4 py-2 rounded-full text-sm font-bold uppercase tracking-wide border border-white/10 text-white">
                   {car.condition}
                 </div>
+                {/* Mobile hint */}
+                <div className="absolute inset-0 md:hidden flex items-end justify-center pb-4 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                  <div className="flex flex-col items-center gap-2 text-white text-sm">
+                    <ChevronDown className="w-5 h-5 animate-bounce" />
+                    <span>Cliquez pour agrandir</span>
+                  </div>
+                </div>
               </div>
+              
+              {/* Thumbnails */}
               <div className="grid grid-cols-4 sm:grid-cols-6 gap-4">
                 {car.images.map((img, idx) => (
                   <button
@@ -189,6 +204,80 @@ export default function CarDetail() {
 
         </div>
       </div>
+
+      {/* Fullscreen Gallery Modal - Mobile */}
+      {fullscreenMode && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          className="fixed inset-0 z-50 bg-black/95 backdrop-blur-sm flex flex-col"
+        >
+          {/* Header */}
+          <div className="flex items-center justify-between p-4 border-b border-white/10 bg-black/50">
+            <div className="text-white text-sm font-medium">
+              {activeImage + 1} / {car.images.length}
+            </div>
+            <button
+              onClick={() => setFullscreenMode(false)}
+              className="p-2 hover:bg-white/10 rounded-lg transition-colors"
+            >
+              <X className="w-6 h-6 text-white" />
+            </button>
+          </div>
+
+          {/* Image Display */}
+          <div className="flex-1 flex items-center justify-center overflow-hidden relative">
+            <img
+              src={car.images[activeImage].startsWith('@assets/') ? car.images[activeImage].replace('@assets/', '/attached_assets/') : car.images[activeImage]}
+              alt={`${car.model} - ${activeImage + 1}`}
+              className="w-full h-full object-contain"
+            />
+            
+            {/* Navigation Arrows */}
+            {activeImage > 0 && (
+              <button
+                onClick={() => setActiveImage(activeImage - 1)}
+                className="absolute left-4 top-1/2 -translate-y-1/2 p-3 bg-white/10 hover:bg-white/20 rounded-lg transition-colors"
+              >
+                <ChevronLeft className="w-6 h-6 text-white" />
+              </button>
+            )}
+            {activeImage < car.images.length - 1 && (
+              <button
+                onClick={() => setActiveImage(activeImage + 1)}
+                className="absolute right-4 top-1/2 -translate-y-1/2 p-3 bg-white/10 hover:bg-white/20 rounded-lg transition-colors"
+              >
+                <ChevronRight className="w-6 h-6 text-white" />
+              </button>
+            )}
+          </div>
+
+          {/* Horizontal Scroll Gallery */}
+          <div className="bg-black/50 border-t border-white/10 p-4">
+            <div
+              ref={scrollContainerRef}
+              className="flex gap-3 overflow-x-auto snap-x snap-mandatory pb-2"
+            >
+              {car.images.map((img, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => setActiveImage(idx)}
+                  className={`flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden border-2 transition-all snap-center ${
+                    idx === activeImage ? "border-primary shadow-lg shadow-emerald-500/50" : "border-white/20 opacity-60 hover:opacity-100"
+                  }`}
+                >
+                  <img
+                    src={img.startsWith('@assets/') ? img.replace('@assets/', '/attached_assets/') : img}
+                    alt={`Thumbnail ${idx + 1}`}
+                    className="w-full h-full object-cover"
+                  />
+                </button>
+              ))}
+            </div>
+          </div>
+        </motion.div>
+      )}
     </div>
   );
 }
