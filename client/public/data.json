@@ -208,5 +208,83 @@
 		"description": "04.2006. Renault Mégane II 2.0 16V Cabriolet. Essence. 271'000 km. 163 PS (120 kW). Boîte manuelle. Expertise récente (MFK) du 15.12.2023. Véhicule cabriolet idéal pour l'été.",
 		"isFeatured": true,
 		"id": 6
+	},
+	{
+		"make": "Fiat",
+		"model": "Panda 1.2 Dynamic",
+		"year": 2007,
+		"price": "3600",
+		"mileage": 123000,
+		"fuelType": "Essence",
+		"transmission": "Manuelle",
+		"bodyType": "Petite voiture",
+		"condition": "Occasion",
+		"exteriorColor": "Rouge",
+		"interiorColor": "Gris",
+		"availability": "Disponible",
+		"autoScoutUrl": "https://www.autoscout24.ch/fr/d/fiat-panda-12-dynamic-12360057?slide=0",
+		"images": [
+			"/attached_assets/ft850521327.jpeg",
+			"/attached_assets/ft1273571512.jpeg",
+			"/attached_assets/ft1408322482.jpeg",
+			"/attached_assets/ft157026899.jpeg",
+			"/attached_assets/ft179260038.jpeg",
+			"/attached_assets/ft2012287690.jpeg",
+			"/attached_assets/ft2125495220.jpeg",
+			"/attached_assets/ft362854712.jpeg",
+			"/attached_assets/ft752564689.jpeg",
+			"/attached_assets/ft771761832.jpeg",
+			"/attached_assets/ft856886522.jpeg"
+		],
+		"features": [
+			"Traction avant",
+			"60 PS (44 kW)",
+			"Expertisée",
+			"Dernière MFK : 02.04.2025",
+			"5.8 l/100 km"
+		],
+		"description": "08.2007. Fiat Panda 1.2 Dynamic. Essence. 123'000 km. 60 PS (44 kW). Boîte manuelle. Consommation : 5.8 l/100 km. Traction avant. Contrôle technique (CT) : Expertisée. Dernière date MFK le 02.04.2025. Petite voiture idéale pour la ville.",
+		"isFeatured": true,
+		"id": 7
+	},
+	{
+		"make": "Peugeot",
+		"model": "307 SW 2.0 HDI Platinum Edition",
+		"year": 2008,
+		"price": "3950",
+		"mileage": 188850,
+		"fuelType": "Diesel",
+		"transmission": "Automatique",
+		"bodyType": "Break",
+		"condition": "Occasion",
+		"exteriorColor": "Gris",
+		"interiorColor": "Gris",
+		"availability": "Disponible",
+		"autoScoutUrl": "https://www.autoscout24.ch/fr/d/peugeot-307-sw-20-hdi-platinum-edition-20074944?slide=11",
+		"images": [
+			"/attached_assets/pt982439066.jpeg",
+			"/attached_assets/pt1215522538.jpeg",
+			"/attached_assets/pt1303157408.jpeg",
+			"/attached_assets/pt1328316824.jpeg",
+			"/attached_assets/pt1406896052.jpeg",
+			"/attached_assets/pt1461132319.jpeg",
+			"/attached_assets/pt1596175573.jpeg",
+			"/attached_assets/pt1763444179.jpeg",
+			"/attached_assets/pt1920797185.jpeg",
+			"/attached_assets/pt1950414082.jpeg",
+			"/attached_assets/pt383306445.jpeg",
+			"/attached_assets/pt476710596.jpeg"
+		],
+		"features": [
+			"Traction avant",
+			"136 PS (100 kW)",
+			"Platinum Edition",
+			"Dernière MFK : 21.05.2025",
+			"5.6 l/100 km",
+			"Break"
+		],
+		"description": "02.2008. Peugeot 307 SW 2.0 HDI Platinum Edition. Diesel. 188'850 km. 136 PS (100 kW). Automatique. Consommation : 5.6 l/100 km. Traction avant. Dernière date MFK le 21.05.2025. Break spacieux et pratique.",
+		"isFeatured": true,
+		"id": 8
 	}
 ]
