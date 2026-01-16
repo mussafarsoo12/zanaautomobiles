@@ -1,0 +1,140 @@
+Voici toutes les données utiles extraites — je les ai formatées pour que vous puissiez les transmettre à l'IA qui reconstruit le site.
+
+Dealer / Contact
+
+Name: Zana Automobiles
+Email: Zana.automobiles@gmail.com
+Phone: +41 78 664 12 70
+Address: (non fournie dans le repo) — please provide a full postal address and Google Maps link if you want it embedded.
+Google Maps link: (not in project) — provide if available.
+Cars (array)
+
+id: mercedes-gle-2019
+
+name: MERCEDES-BENZ GLE Coupé 43 AMG 4Matic 9G-Tronic
+price: 39000 (CHF)
+kilometrage: 117000
+images: 1.jpeg,2.jpeg,3.jpeg,4.jpeg,5.jpeg,6.jpeg,7.jpeg,8.jpeg (under /public/voitures/mercedes-gle-2019/)
+description lines:
+Date de mise en circulation : 06.2019
+Carburant : Essence
+Kilométrage : 117'000 km
+Puissance : 390 PS (287 kW)
+Boîte : Automatique
+Consommation mixte : 12.6 l/100 km
+Énergie : G
+Transmission : 4 roues motrices
+Type : SUV / Tout-terrain
+Expertisée : Oui (14.06.2022)
+autoscoutUrl: https://www.autoscout24.ch/fr/d/mercedes-benz-gle-coupe-43-amg-4matic-9g-tronic-20071900
+available: (not specified → true)
+id: VW_Fox_1.4_2006
+
+name: VW Fox 1.4 2006
+price: 4200
+kilometrage: 43000
+images: 1.jpeg ... 13.jpeg (under /public/voitures/VW_Fox_1.4_2006/)
+description:
+08.2006
+Essence
+43'000 km
+75 PS (55 kW)
+Boîte manuelle
+6.8 l/100 km
+Traction avant
+Petite voiture
+Expertisée : Oui
+Dernière date MFK : 27.06.2025
+autoscoutUrl: https://www.autoscout24.ch/fr/d/vw-fox-14-12576177
+available: (not specified → true)
+id: nissan_qashqai_2009
+
+name: Nissan Qashqai 2009
+price: 1900
+kilometrage: 349000
+images: 1.png,2.jpeg,3.jpeg,4.jpeg,5.jpeg (under /public/voitures/nissan_qashqai_2009/)
+description:
+12.2009
+Diesel
+349'000 km
+150 PS (110 kW)
+Automatique
+7.9 l/100 km
+G
+4 roues motrices
+SUV / Tout-terrain
+available: false
+id: hyunda_i30_2009
+
+name: Hyundai i30 2009
+price: 1900
+kilometrage: 198000
+images: 1.jpeg ... 7.jpeg (under /public/voitures/hyunda_i30_2009/)
+description:
+07.2009
+Essence
+198'000 km
+126 PS (93 kW)
+Automatique
+6.9 l/100 km
+F
+Traction avant
+Berline
+Expertisée : Non
+autoscoutUrl: https://www.autoscout24.ch/fr/d/hyundai-i30-16-swiss-plus-edition-automatic-20074759?slide=6
+available: true
+id: fiat_500
+
+name: Fiat 500 1.4 2009
+price: 3800
+kilometrage: 137000
+images: 1.jpeg ... 5.jpeg (under /public/voitures/fiat_500/)
+description:
+05.2009
+Essence
+137'000 km
+100 PS (73 kW)
+Boîte manuelle
+6.3 l/100 km
+E
+Traction avant
+Petite voiture
+Contrôle technique (CT)
+Expertisée : Oui
+Dernière date MFK : 01.07.2024
+autoscoutUrl: https://www.autoscout24.ch/fr/d/fiat-500-14-16v-sport-12433366?slide=0
+available: true
+id: renault_megane
+
+name: RENAULT Mégane C-C 2.0 16V T Privilège Luxe
+price: 2500
+kilometrage: 271000
+images: 1.jpeg ... 11.jpeg (under /public/voitures/renault_megane/)
+description:
+04.2006
+Essence
+271'000 km
+163 PS (120 kW)
+Boîte manuelle
+8 l/100 km
+G
+Traction avant
+Cabriolet
+Contrôle technique (CT)
+Expertisée : Oui
+Dernière date MFK : 14.10.2025
+autoscoutUrl: https://www.autoscout24.ch/de/d/renault-megane-c-c-20-16v-t-privilege-luxe-12836415?slide=10
+available: true
+Files / Assets locations
+
+Cars images: /public/voitures/{id}/{image}
+Logos & icons: img (logo_fenetre2.png, logo_zanaautomobiles.png, etc.)
+Suggested additional info to provide (not in repo) for the new site:
+
+Full postal address for the garage (street, postal code, city, country)
+Google Maps URL for that address
+Opening hours
+VAT / company registration if needed
+Social links (Facebook, Instagram)
+Preferred language(s) for site content
+Any branding guidelines (font files, hex colors — accent is #ff7e1b already)
